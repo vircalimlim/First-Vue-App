@@ -1,6 +1,10 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <div v-if="true">
+      <h1>Im invisible - {{lol}}</h1>
+    </div>
+    <h1 v-on:click="msg = 'change text'">{{ msg }}</h1>
+    <button @click="msg = 'changes text'">click me</button>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
