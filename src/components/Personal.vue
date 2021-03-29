@@ -22,7 +22,7 @@
     <div id="home" class="intro">
     <transition name="fade" appear>
       <div>
-        <img src="@/assets/vir.github.io/img/avatar.png" alt="image">
+        <img src="@/assets/img/avatar.png" alt="image">
         <div class="para">
       <p>Hello I am Virgilio,</p>
       <p>an aspiring Web Developer</p>
@@ -53,7 +53,7 @@
     <div class="images">
       
       <div ref="imgParent" @click="zoom(image.id, $event)" :id="image.id" v-for="image in images" :key="image.id" class="img">
-        <img :src="require('@/assets/vir.github.io/img/'+image.pic)" alt="image" height="300" width="300">
+        <img :src="require('@/assets/img/'+image.pic)" alt="image" height="300" width="300">
       </div>
 
       
@@ -133,7 +133,7 @@
           
         }
         else{
-        this.$refs.img.src = require('@/assets/vir.github.io/img/'+ this.images[this.count++]['pic'])
+        this.$refs.img.src = require('@/assets/img/'+ this.images[this.count++]['pic'])
         }
 
       }, 2500)
