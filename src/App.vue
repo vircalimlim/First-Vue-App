@@ -1,15 +1,19 @@
 <template>
-  <Forms></Forms>
+  <Navbar></Navbar>
+  <Personal></Personal>
 </template>
 
 <script>
-import Forms from './components/Forms.vue'
-export default{
-  components: {
-    Forms
-  }
+import Navbar from '@/components/Navbar.vue'
+  import Personal from '@/components/Personal.vue'
+  export default{
   
-}
+  components: {
+    Navbar,
+    Personal,
+  }
+
+  }
 </script>
 
 <style>
@@ -17,9 +21,13 @@ export default{
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  tedxt-align: center;
+  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-  padding: 10px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: break-word;
 }
 </style>
