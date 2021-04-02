@@ -47,7 +47,7 @@
     .bg {
       z-index: 9;
       display: block;
-      background: black;
+      background: #232b2b;
       padding: 4px 10px;
       min-height: 3rem;
       width: 100%;
@@ -65,10 +65,10 @@
       height: 3rem;
       margin: 0;
       padding: 0 10px;
-      color: #52527a;
+      color: #414a4c;
       border: none;
       outline: none;
-      background-color: black;
+      background-color: #232b2b;
     }
     button:hover {
       color: white;
@@ -98,7 +98,7 @@
       padding: 10px 0;
     }
     li:hover {
-      background-color: #666699;
+      background-color: #3b444b;
       padding: 10px 10px;
     }
 

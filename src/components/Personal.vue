@@ -1,27 +1,13 @@
 <template>
   <div class="component-container">
 
-    <!-- <div class="personal">
-                                                                                                                                                  <h2>Personal Information</h2>
-                                                                                                                                                  <ul>
-                                                                                                                                                  <li>
-                                                                                                                                                  <p>Name: Virgilio Jr. P. Calimlim</p>
-                                                                                                                                                  </li>
-                                                                                                                                                  <li>
-                                                                                                                                                    <p>Address: C. Bogtong Malasiqui, Pangasinan</p>
-                                                                                                                                                  </li>
-                                                                                                                                                  <li>
-                                                                                                                                                  <p>Age: 21</p>
-                                                                                                                                                  </li>
-                                                                                                                                                  </ul>
-                                                                                                                                                </div>-->
     <div id="home" class="container intro">
       <transition name="fade" appear>
         <div>
           <img src="@/assets/img/avatar.png" alt="image">
           <div class="para">
             <p>
-              Hello I am Virgilio,
+              Hello, I am Virgilio Calimlim
             </p>
             <p>
               an aspiring Web Developer
@@ -89,7 +75,7 @@
           <label>Email:</label> virgiliocalimlim@gmail.com
         </p>
         <p>
-          <label>Github:</label> <a href="https://github.com/vircalimlim">virgiliocalimlim</a>
+          <label>Github:</label> <a href="https://github.com/vircalimlim">https://github.com/vircalimlim</a>
         </p>
         <p>
           <label>Mobile Number:</label> 09496127912
@@ -227,7 +213,7 @@
     .image-overlay img {
       height: 60%;
       width: 250px;
-      background: white;
+      background: #232b2b;
       objdect-fit: contain;
       margdin: auto 0;
     }
@@ -235,6 +221,7 @@
     h2 {
       text-shadow: 0 0 2px rgba(0,0,0,.4);
       padding: 20px 10px;
+      color: #0e1111;
     }
 
     .intro {
@@ -243,7 +230,7 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      background: #a3a3c2;
+      background: #3b444b;
       min-height: 40vh;
       padding: 150px 15px 100px 15px;
     }
@@ -267,7 +254,7 @@
     .intro div  p:nth-child(2) {
       font-size: 35px;
       font-weight: bolder;
-      color: #1f1f2e;
+      color: #f0f0f5;
     }
 
     .fade-enter-from {
@@ -285,12 +272,13 @@
     }
     ul li {
       font-weight: bold;
-      margin: 0 0 10px 5px;
+      margin: 0 0 15px 7px;
       background: #a3a3c2;
       border-radius: 20px;
       list-style-type: none;
       padding: 10px 20px;
       display: inline-block;
+      box-shadow: 2px 0 2px rgba(0,0,0, .5);
     }
     li:nth-child(3) {
       color: #ffffff;
@@ -338,7 +326,6 @@
       width: 100%;
     }
     .about-me p {
-      font-style: italic;
       text-align: justify;
       font-size: 18px;
       margin-top: 5px;
@@ -346,13 +333,14 @@
     }
 
     img {
-      background: black;
+      background: #232b2b;
       object-fit: contain;
       webkit-object-fit: contain;
       padding: 10px 15px;
       margin-top: 10px;
       border: none;
       box-shadow: 0 0 5px rgba(0,0,0, .4);
+      border-radius: 20px;
     }
     .images {
       display: flex;
@@ -365,17 +353,22 @@
       width: 100%;
       padding: 0px 15px;
       min-height: 200px;
-      background: black;
+      background: #232b2b;
       color: white;
       margin-top: 40px;
       text-align: left;
     }
 
-    .info h2 {
+    .info {
       text-align: center;
+      color: white;
+    }
+    .info h2{
+      color: white;
     }
     .info p{
       margin-top: 10px;
+      font-size: 18px;
     }
 
     a {
@@ -383,7 +376,7 @@
       color: white;
     }
     label {
-      color: #7575a3;
+      color: #f5f5f5;
       font-weight: bold;
     }
 
