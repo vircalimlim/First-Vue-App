@@ -221,7 +221,7 @@
     h2 {
       text-shadow: 0 0 2px rgba(0,0,0,.4);
       padding: 20px 10px;
-      color: #0e1111;
+      color: #4d96fb;
     }
 
     .intro {
@@ -230,7 +230,7 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      background: #3b444b;
+      background: #53aff4;
       min-height: 40vh;
       padding: 150px 15px 100px 15px;
     }
@@ -353,7 +353,7 @@
       width: 100%;
       padding: 0px 15px;
       min-height: 200px;
-      background: #232b2b;
+      background: #4d96fb;
       color: white;
       margin-top: 40px;
       text-align: left;
