@@ -250,6 +250,7 @@
       font-size: 40px;
       font-weight: bolder;
       color: #f0f0f5;
+      margin-top: 10px;
     }
     .intro div  p:nth-child(2) {
       font-size: 35px;
