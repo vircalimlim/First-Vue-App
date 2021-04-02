@@ -48,7 +48,7 @@
       z-index: 9;
       display: block;
       background: black;
-      padding: 4px 4px;
+      padding: 4px 10px;
       min-height: 3rem;
       width: 100%;
       position: fixed;
@@ -64,7 +64,7 @@
       font-weight: bolder;
       height: 3rem;
       margin: 0;
-      padding: 0 18px;
+      padding: 0 10px;
       color: #52527a;
       border: none;
       outline: none;

@@ -2,20 +2,20 @@
   <div class="component-container">
 
     <!-- <div class="personal">
-          <h2>Personal Information</h2>
-          <ul>
-          <li>
-          <p>Name: Virgilio Jr. P. Calimlim</p>
-          </li>
-          <li>
-            <p>Address: C. Bogtong Malasiqui, Pangasinan</p>
-          </li>
-          <li>
-          <p>Age: 21</p>
-          </li>
-          </ul>
-        </div>-->
-    <div id="home" class="intro">
+                                                                                                                                                  <h2>Personal Information</h2>
+                                                                                                                                                  <ul>
+                                                                                                                                                  <li>
+                                                                                                                                                  <p>Name: Virgilio Jr. P. Calimlim</p>
+                                                                                                                                                  </li>
+                                                                                                                                                  <li>
+                                                                                                                                                    <p>Address: C. Bogtong Malasiqui, Pangasinan</p>
+                                                                                                                                                  </li>
+                                                                                                                                                  <li>
+                                                                                                                                                  <p>Age: 21</p>
+                                                                                                                                                  </li>
+                                                                                                                                                  </ul>
+                                                                                                                                                </div>-->
+    <div id="home" class="container intro">
       <transition name="fade" appear>
         <div>
           <img src="@/assets/img/avatar.png" alt="image">
@@ -31,7 +31,7 @@
       </transition>
     </div>
 
-    <div id="about" class="about-me">
+    <div id="about" class="container about-me">
       <h2>About Me</h2>
       <p>
         I'm Virgilio Calimlim, a college student in Philippine College of Science and Technology. My main focus is about Web Development. I enjoyed creating responsive and mobile friendly websites and systems using my knowledge of the following:
@@ -49,7 +49,7 @@
       </ul>
     </div>
 
-    <div id="projects" class="projects">
+    <div id="projects" class="container projects">
       <h2>Projects</h2>
 
       <div class="images">
@@ -63,7 +63,7 @@
 
     </div>
 
-    <div v-show="overlay" @click.self="hide" class="image-overlay">
+    <div v-show="overlay" @click.self="hide" class="container image-overlay">
 
       <svg @click="imageBack(count)" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="arrow bi bi-caret-left-fill" viewBox="0 0 16 16"> <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" /> </svg>
 
@@ -72,14 +72,17 @@
           <span>&times;</span>
 
         </div>
+
         <img ref="img" src="" alt="image">
+
       </div>
+
 
       <svg @click="imageForward(count)" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="arrow bi bi-caret-right-fill" viewBox="0 0 16 16"> <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" /> </svg>
 
     </div>
 
-    <div id="contacts" class="contacts">
+    <div id="contacts" class="container contacts">
       <div class="info">
         <h2>Contacts</h2>
         <p>
@@ -124,13 +127,22 @@
       }
     },
     methods: {
+      beforeEnter() {
+        alert("before")
+      },
+      enter() {
+        alert("enter")
+      },
+      afterEnter() {
+        alert("after")
+      },
       zoom(id, event) {
         if (event.target.src) {
 
           this.$refs.img.src = event.target.src
           this.overlay = true
           this.count = id-1
-          alert(id)
+
         } else {
           return false
         }
@@ -146,7 +158,6 @@
       },
 
       imageBack(id) {
-        alert(id)
         if (this.count <= 0) {
           this.count = parseInt(this.images.length-1)
 
@@ -155,12 +166,10 @@
         } else {
           this.count--
           this.$refs.img.src = require('@/assets/img/'+ this.images[this.count]['pic'])
-
         }
       },
 
       imageForward(id) {
-        alert(this.count)
         if (this.count >= this.images.length-1) {
           this.count = 0
           this.$refs.img.src = require('@/assets/img/'+ this.images[this.count]['pic'])
@@ -211,6 +220,7 @@
       border-radius: 20px;
       height: 30px;
       width: 30px;
+      z-index: 999;
 
     }
 
@@ -223,8 +233,8 @@
     }
 
     h2 {
-      color: rxed;
       text-shadow: 0 0 2px rgba(0,0,0,.4);
+      padding: 20px 10px;
     }
 
     .intro {
@@ -235,7 +245,7 @@
       align-items: center;
       background: #a3a3c2;
       min-height: 40vh;
-      padding: 150px 10px 100px 10px;
+      padding: 150px 15px 100px 15px;
     }
     .intro .para {
       height: 100%;
@@ -271,7 +281,7 @@
 
 
     ul {
-      padding: 30px 0 18px 0;
+      padding: 30px 15px 18px 15px;
     }
     ul li {
       font-weight: bold;
@@ -320,13 +330,11 @@
     }
 
     li:hover {
-      madrgin-left: 5px;
       transform: scale(.9);
       transition: all .4s ease;
-      backgxround: #f0f0f5;
     }
     .about-me {
-      padding: 20px 10px;
+      padding: 20px 15px;
       width: 100%;
     }
     .about-me p {
@@ -341,7 +349,7 @@
       background: black;
       object-fit: contain;
       webkit-object-fit: contain;
-      padding: 10px 0;
+      padding: 10px 15px;
       margin-top: 10px;
       border: none;
       box-shadow: 0 0 5px rgba(0,0,0, .4);
@@ -355,17 +363,19 @@
 
     .contacts {
       width: 100%;
-      padding: 10px;
+      padding: 0px 15px;
       min-height: 200px;
       background: black;
       color: white;
       margin-top: 40px;
+      text-align: left;
     }
-    .info {
-      padding: 40px 0 0 0;
-    }
+
     .info h2 {
-      margin-bottom: 10px;
+      text-align: center;
+    }
+    .info p{
+      margin-top: 10px;
     }
 
     a {
@@ -380,5 +390,6 @@
     .arrow {
       color: white;
     }
+
 
   </style>
