@@ -40,7 +40,8 @@
 
       <div class="images">
 
-        <div ref="imgParent" @click="zoom(image.id, $event)" :id="image.id" v-for="image in images" :key="image.id" class="img">
+        <div ref="imgParent" @click="zoom(image.id, $event)" :id="image.id" v-for="image in images" :key="image.id" class="imgParent">
+          <h3>Title</h3>
           <img :src="require('@/assets/img/'+image.pic)" alt="image" height="300" width="300">
         </div>
 
@@ -196,7 +197,7 @@
     }
     .image-container .close {
       position: absolute;
-      top: 10px;
+      top: 5px;
       right: 6px;
       margin: 0;
       font-size: 26px;
@@ -213,15 +214,17 @@
     .image-overlay img {
       height: 60%;
       width: 250px;
-      background: #232b2b;
-      objdect-fit: contain;
-      margdin: auto 0;
+      object-fit: cover;
     }
 
     h2 {
       text-shadow: 0 0 2px rgba(0,0,0,.4);
       padding: 20px 10px;
       color: #0e1111;
+    }
+    h3{
+      color: #0e1111;
+      padding: 10px 10px;
     }
 
     .intro {
@@ -232,7 +235,7 @@
       align-items: center;
       background: #3b444b;
       min-height: 40vh;
-      padding: 150px 15px 100px 15px;
+      padding: 130px 15px 100px 15px;
     }
     .intro .para {
       height: 100%;
@@ -333,19 +336,29 @@
     }
 
     img {
-      background: #232b2b;
-      object-fit: contain;
+      
+      object-fit: cover;
       webkit-object-fit: contain;
-      padding: 10px 15px;
-      margin-top: 10px;
-      border: none;
-      box-shadow: 0 0 5px rgba(0,0,0, .4);
-      border-radius: 20px;
+      
     }
     .images {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
+    }
+    .imgParent{
+      box-shadow: 0 0 5px rgba(0,0,0, .4);
+      border-radius: 20px;
+      margin: 15px 0;
+      padding: 0;
+    }
+    .imgParent img{
+      height: 400px;
+      width: 300px;
+      padding: 10px 0 0 0;
+      margin: 0;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
     }
 
 
