@@ -321,7 +321,10 @@
     }
 
     li:hover {
-      transform: scale(.9);
+      cursor: pointer;
+      /*transform: scale(.9);*/
+      box-shadow: 3px 0 3px rgba(0,0,0, .8);
+      opacity: .9;
       transition: all .4s ease;
     }
     .about-me {
