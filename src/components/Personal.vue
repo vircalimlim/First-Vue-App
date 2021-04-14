@@ -233,7 +233,7 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      background: #3b444b;
+      background: linear-gradient(360deg, #0e1111, #3b444b, #414a4c);
       min-height: 40vh;
       padding: 130px 15px 100px 15px;
     }
