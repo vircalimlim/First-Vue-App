@@ -81,6 +81,7 @@
     }
     button:hover {
       color: white;
+      cursor: pointer;
     }
 
     .title {
@@ -109,6 +110,7 @@
     li:hover {
       background-color: #3b444b;
       padding: 10px 10px;
+      cursor: pointer;
     }
 
     .toggle-enter-from, .toggle-leave-to {

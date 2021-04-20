@@ -195,6 +195,7 @@
       padding: 10px 15px;
       position: relative;
     }
+   
     .image-container .close {
       position: absolute;
       top: 5px;
@@ -355,6 +356,10 @@
       margin: 15px 0;
       padding: 0;
     }
+    .imgParent:hover{
+      cursor: pointer;
+    }
+
     .imgParent img{
       height: 400px;
       width: 300px;
@@ -398,6 +403,9 @@
 
     .arrow {
       color: white;
+    }
+    .arrow:hover{
+      cursor: pointer;
     }
 
 

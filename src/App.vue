@@ -1,6 +1,7 @@
 <template>
+ <div class="container">
   <Navbar></Navbar>
-  <div class="containder">
+ 
   <Personal></Personal>
 </div>
 </template>
@@ -65,14 +66,11 @@ import Navbar from '@/components/Navbar.vue'
   }
 @media (min-width:961px)  { 
   /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-  .container{
-  padding: 0 50px;
-}
+  
+
   }
 @media (min-width:1025px) { 
-  .container{
-  padding: 0 150px;
-}
+ 
   }
 @media (min-width:1281px) { 
   /* hi-res laptops and desktops */ 
