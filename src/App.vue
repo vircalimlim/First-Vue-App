@@ -1,6 +1,8 @@
 <template>
   <Navbar></Navbar>
+  <div class="containder">
   <Personal></Personal>
+</div>
 </template>
 
 <script>
@@ -51,6 +53,30 @@ import Navbar from '@/components/Navbar.vue'
     
     url("assets/font/f1448054f14757d284c064b271c00cc6.svg#Proxima Nova Soft W03 Regular") format("svg"); /* iOS 4.1- */ 
 }
+
+@media (min-width:320px)  { 
+  /* smartphones, iPhone, portrait 480x320 phones */ 
+  }
+@media (min-width:481px)  { 
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+  }
+@media (min-width:641px)  { 
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  }
+@media (min-width:961px)  { 
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  .container{
+  padding: 0 50px;
+}
+  }
+@media (min-width:1025px) { 
+  .container{
+  padding: 0 150px;
+}
+  }
+@media (min-width:1281px) { 
+  /* hi-res laptops and desktops */ 
+  }
 
 
 </style>

@@ -55,10 +55,10 @@
       <svg @click="imageBack(count)" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="arrow bi bi-caret-left-fill" viewBox="0 0 16 16"> <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" /> </svg>
 
       <div class="image-container">
-        <div @click="hide" class="close">
+        <!--<div @click="hide" class="close">
           <span>&times;</span>
 
-        </div>
+        </div>-->
 
         <img ref="img" src="" alt="image">
 
@@ -182,7 +182,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(0,0,0, .8);
+      background-color: rgba(0,0,0, .9);
       position: fixed;
       top: 0;
       height: 100%;
@@ -198,7 +198,7 @@
     .image-container .close {
       position: absolute;
       top: 5px;
-      right: 6px;
+      right: 55px;
       margin: 0;
       font-size: 26px;
       color: white;
@@ -213,7 +213,7 @@
 
     .image-overlay img {
       height: 60%;
-      width: 250px;
+      width: 80%;
       object-fit: cover;
     }
 
